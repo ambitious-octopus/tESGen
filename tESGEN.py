@@ -55,10 +55,6 @@ df_raw = pd.DataFrame(data=data, index=["tdcsan", "tdcsca", "tacs", "trns", "tim
 
 df = df_raw.T
 
-# fig = px.line(df, x="time", y="tdcsan", title='Life expectancy in Canada')
-
-# plot(fig)
-
 fig = make_subplots(rows=2, 
                     cols=2, subplot_titles=("Anodal, Transcranial direct current stimulation (tDCS)", 
                                             "Cathodal, Transcranial direct current stimulation (tDCS)", 
